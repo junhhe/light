@@ -20,6 +20,8 @@
       specularMaterial(255);
       //noStroke();
       texture(img);
+      rotateX(mouseY/200);
+      rotateY(mouseX/200);
       //torus(radius of the ring, the radius, detailX, detailY)
       torus(200,64,30,30);
     }
