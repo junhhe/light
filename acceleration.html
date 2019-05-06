@@ -11,8 +11,8 @@
       createCanvas(window.innerWidth,window.innerHeight);
     }
     function draw() {
-      ax = acclerationX;
-      if (ax < axHigh){
+      ax = accelerationX;
+      if (ax > axHigh){
         axHigh = ax;
               document.getElementById("ax").innerHTML = "X Accel = " + axHigh;
       }
