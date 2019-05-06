@@ -12,7 +12,7 @@
     }
     function draw() {
       ax = accelerationX;
-      if (ax > axHigh){
+      if (ax < axHigh){
         axHigh = ax;
               document.getElementById("ax").innerHTML = "X Accel = " + axHigh;
       }
