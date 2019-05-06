@@ -6,20 +6,17 @@
   <h1 id="ax"></h1>
   <script>
       var ax;
+      var axHigh = 0;
     function setup(){
       createCanvas(window.innerWidth,window.innerHeight);
     }
     function draw() {
       ax = acclerationX;
-      document.getElementById("ax").innerHTML = "X Accel = " +ax;
+      if (ax < axHigh){
+        axHigh = ax;
+              document.getElementById("ax").innerHTML = "X Accel = " + axHigh;
+      }
     }
-    
-    
-    
-    
-    
-    
-    
   </script>
 </body>
 </html>
